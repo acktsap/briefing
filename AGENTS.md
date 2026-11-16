@@ -6,3 +6,8 @@
 - 안내 문서는 `site/guides/`에 둔다. 페이지 간 구성과 바로가기 표현을 일관되게 유지한다.
 - 외부 링크는 공식 주소를 확인하고, 새 탭 링크에 `rel="noopener noreferrer"`를 지정한다.
 - 변경 후 `git diff --check`, 내부 링크·앵커·CSS 경로를 확인한다. 셸 변경 시 `sh -n open.sh`도 실행한다.
+
+## Commit
+
+- 커밋 메시지는 짧고 단순하게 작성한다. `feat:` 같은 접두사는 붙이지 않는다.
+- 모든 커밋에 Git 사용자 이름과 이메일의 `Signed-off-by`를 넣는다 (`git commit -s`). GPG/SSH 서명은 필수가 아니다.
