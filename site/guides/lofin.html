@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="지방재정365 복식부기재무현황에서 지자체 부채 금액을 찾고 연도별 변화를 해석하는 방법을 안내합니다.">
+  <title>지자체 부채 읽는 방법 — Briefing</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문 바로가기</a>
+  <header class="masthead"><a class="brand" href="../index.html">Briefing.</a><nav aria-label="페이지 탐색"><a href="../index.html#deeper">← 바로가기 목록</a></nav></header>
+  <main id="main" class="guide">
+    <header class="guide-intro">
+      <p class="eyebrow">READING GUIDE / 지자체 부채</p>
+      <h1>우리 지자체 부채,<br>실제 금액은 얼마일까요?</h1>
+      <p class="lead">지방재정365의 ‘복식부기재무현황(부채)’에서 관심 지역의 부채 금액과 연도별 변화를 확인하세요.</p>
+      <a class="guide-button" href="https://www.lofin365.go.kr/portal/LF5110000.do?srchCrstCn=%EB%B6%80%EC%B1%84&amp;curPage=1&amp;pageSize=10&amp;pdtaId=MCIHSMW0VULU6BJ304XC709348&amp;rdIncrYn=Y&amp;frstParamYn=Y" target="_blank" rel="noopener noreferrer">복식부기재무현황(부채) 열기 ↗<span class="sr-only"> (새 탭)</span></a>
+    </header>
+    <section class="guide-section">
+      <h2>어떻게 찾고 보나요?</h2>
+      <ol class="guide-steps">
+        <li><strong>Sheet에서 실제 금액 확인</strong><p>재정데이터개방 → 재정 데이터셋에서 ‘복식부기재무현황(부채)’를 찾으세요. Sheet는 표로 금액을 확인할 때, Time Series는 연도별 변화를 볼 때 활용합니다.</p></li>
+        <li><strong>지역·회계연도·단위 확인</strong><p>관심 자치단체를 찾아 부채 금액을 읽으세요. 조회한 날짜와 자료의 회계연도는 다릅니다. 원·백만원·억원 중 화면에 표시된 단위를 확인하세요. 백만원 단위라면 100이 1억원입니다.</p></li>
+        <li><strong>Time Series에서 최근 3~5년 비교</strong><p>같은 자치단체와 같은 집계 범위로 이전 연도를 비교하세요. ‘본청’과 지역 전체를 구분하고, 대상회계와 행정구역 변경 여부도 확인하세요. 빈칸이나 미공개 값은 0으로 간주하지 마세요.</p></li>
+      </ol>
+    </section>
+    <section class="guide-section">
+      <h2>이 금액은 무엇을 뜻하나요?</h2>
+      <dl class="guide-list">
+        <div><dt>부채는 차입금보다 넓습니다</dt><dd>복식부기 재무제표에 인식한 부채입니다. 차입금 외에 미지급금·퇴직급여충당부채 등도 포함되므로, 전체 금액을 모두 ‘빌린 돈’으로 읽으면 안 됩니다. 지방채무 잔액을 다루는 ‘채무현황’과도 구분하세요.</dd></div>
+        <div><dt>연도 말에 남아 있는 잔액입니다</dt><dd>해당 회계연도 말의 부채를 나타냅니다. 그해 새로 빌린 금액이나 지출액이 아닙니다. 여러 해의 잔액을 더하면 같은 부채를 중복 계산하게 됩니다.</dd></div>
+        <div><dt>지역 전체의 모든 빚을 뜻하지는 않습니다</dt><dd>지자체 자체의 재무현황을 보는 자료입니다. 지방공사·공단 등 별도 기관의 부채까지 파악하려면 ‘지역통합부채현황’에서 기관별 금액과 내부거래 조정을 함께 확인하세요.</dd></div>
+      </dl>
+    </section>
+    <section class="guide-section guide-example">
+      <p class="eyebrow">가상의 숫자로 보는 예시</p>
+      <h2>1,000억원에서 1,200억원이 됐다면</h2>
+      <p>같은 기준의 부채 잔액이 전년 1,000억원에서 올해 1,200억원으로 늘었다면, 증가액은 200억원이고 증가율은 20%입니다. 증가율은 (올해 잔액 − 전년 잔액) ÷ 전년 잔액 × 100으로 계산합니다. 전년 잔액이 0이면 이 식으로 증가율을 계산할 수 없습니다.</p>
+      <p>이 숫자만으로 ‘올해 200억원을 새로 빌렸다’고 말할 수는 없습니다. 차입·상환뿐 아니라 미지급금이나 충당부채의 변화도 원인일 수 있습니다.</p>
+      <p><strong>메모 예시:</strong> “부채 잔액 전년 대비 200억원 증가(20%). 늘어난 항목과 원인은 해당 지자체 결산서의 재정상태표와 주석에서 확인.”</p>
+    </section>
+    <section class="guide-section">
+      <h2>늘었다면 무엇을 더 확인하나요?</h2>
+      <p>부채가 크게 변한 해는 지자체 홈페이지의 결산서·재무제표에서 어떤 부채 항목이 변했는지 살펴보세요. 상환 시기와 현금·세입 여건도 함께 봐야 재정 부담을 판단할 수 있습니다.</p>
+      <p>다른 지역과 비교할 때는 인구·재정 규모가 비슷한 지자체를 고르세요. 총액이 크다는 이유만으로 재정이 더 나쁘다고 단정하지 마세요. 자산도 도로·공원처럼 현금으로 쉽게 바꾸기 어려운 것이 있어, 자산 총액만으로 상환 능력을 판단하기 어렵습니다.</p>
+      <p>매일 볼 필요는 없습니다. 새 결산 자료가 공개되거나 지역 재정 관련 기사를 읽었을 때 확인하면 됩니다.</p>
+    </section>
+    <section class="guide-section sources">
+      <h2>공식 참고 자료</h2>
+      <p>자료의 성격은 <a href="https://www.data.go.kr/dataset/3043194/openapi.do" target="_blank" rel="noopener noreferrer">공공데이터포털의 복식부기재무현황(부채) 설명 ↗<span class="sr-only"> (새 탭)</span></a>을 참고했습니다. 조회할 때는 지방재정365의 데이터 설명·대상회계·단위를 함께 확인하세요. 위 확인 순서는 Briefing의 추천 루틴입니다.</p>
+    </section>
+    <a class="guide-button" href="../index.html#deeper">← 중요한 사건이 생겼을 때로 돌아가기</a>
+  </main>
+  <footer><a class="brand" href="../index.html">Briefing.</a><p>짧게 읽고, 맥락을 남기세요.</p></footer>
+</body>
+</html>
